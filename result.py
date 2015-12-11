@@ -114,7 +114,6 @@ else:
 				for child in divisions:
 					if(counter1%2==0):
 						movie_review = child.h2.get_text()
-						print movie_review
 						customPrint( """<i style="display:inline">%s</i>"""%movie_review)
 						customPrint( """<br>""")
 					counter1+=1
