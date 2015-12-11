@@ -35,6 +35,7 @@ flag = 0
 for line_a in file_actor_list:
 	if actor_name.lower() in line_a.lower():
                 actor_id = line_a[line_a.index(":")+1:len(line_a)-1]
+                actor_id = actor_id.strip()
                 flag=1
 		#print """ <h3>Actor ID: %s</h3>"""%actor_id
 		break
